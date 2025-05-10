@@ -1,40 +1,76 @@
-body{
+body {
     text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
-.btn{
-    block-size: 150px;
-    inline-size: 150px;
+h1 {
+    font-size: 3rem;
+    margin-block-start: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    max-inline-size: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.btn {
+    margin-block-start: 10px;
+    inline-size: 40vw;
+    max-inline-size: 150px;
+    block-size: 40vw;
+    max-block-size: 150px;
     border-radius: 20%;
     border: 7px solid black;
-    margin: 1rem;
+    box-sizing: border-box;
+    transition: 0.2s;
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-}
 
-.red{
+.red {
     background-color: #d95980;
 }
 
-.yellow{
+.yellow {
     background-color: #f99b45;
 }
 
-.green{
+.green {
     background-color: #63aac0;
 }
 
-.purple{
+.purple {
     background-color: #819ff9;
 }
 
-.flash{
-    background-color: white;
+/* Flash Effects */
+.flash {
+    background-color: white !important;
 }
 
-.userflash{
-    background-color: green;
+.userflash {
+    background-color: green !important;
+}
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
 }
